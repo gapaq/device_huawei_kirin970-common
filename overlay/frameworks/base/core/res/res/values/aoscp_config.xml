@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 CypherOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Paths to fast charging status file to detect whether an oem fast charger is active -->
+    <string-array name="config_oemFastChargerStatusPaths" translatable="false">
+        <item>/sys/class/power_supply/Battery/fcp_status</item>
+        <item>/sys/class/power_supply/Battery/scp_status</item>
+    </string-array>
+
+    <!-- Whether the device requires overlays to be in /system/overlay
+    <bool name="config_hasSystemOverlayPath">true</bool>-->
+
+    <!-- Full screen aspect ratio
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>-->
+
+    <!-- Determines whether the device supports fingerprint navigation
+    <bool name="config_supportsFPNavigation">true</bool>-->
+
+    <!-- Key codes of fingerprint gestures. If the gesture is not supported set it to 0.
+    <integer name="config_fpSingleTapKeyCode">174</integer>
+    <integer name="config_fpSwipeLeftKeyCode">105</integer>
+    <integer name="config_fpSwipeRightKeyCode">106</integer>
+    <integer name="config_fpLongpressKeyCode">28</integer>-->
+
+    <!-- Default settings for gestures
+                0 - Disabled
+                1 - Toggle flashlight
+                2 - Toggle airplane mode
+                3 - Play/Pause music
+                4 - Next music
+                5 - Previous music
+                6 - Take screenshot
+                7 - Assistant
+                8 - Home Button
+                9 - Back Button
+                10 - AppSwitch
+                11 - Wake device
+    <integer name="config_fpSingleTapDefault">8</integer>
+    <integer name="config_fpSwipeLeftDefault">9</integer>
+    <integer name="config_fpSwipeRightDefault">10</integer>
+    <integer name="config_fpLongpressDefault">7</integer>-->
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option
+    <bool name="config_intrusiveBatteryLed">true</bool>-->
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors
+    <bool name="config_multiColorBatteryLed">true</bool>-->
+
+	<!-- Descriptor: Path to the vendors biometrics hal, required to send commands.
+         TransactionId: The transaction id required to send to the biometrics hal.
+    <string name="config_vendorBiometricsDescriptor" translatable="false">vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint</string>
+    <integer name="config_vendorBiometricsTransactionId">20</integer>-->
+
+</resources>
